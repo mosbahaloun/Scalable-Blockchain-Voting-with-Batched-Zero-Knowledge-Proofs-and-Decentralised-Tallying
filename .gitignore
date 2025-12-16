@@ -1,0 +1,69 @@
+# Dependencies
+node_modules/
+Backend/node_modules/
+frontend/node_modules/
+
+# Build outputs
+artifacts/
+Backend/artifacts/
+cache/
+Backend/cache/
+build/
+dist/
+artifacts/build-info/
+
+# Large ceremony files (users download these separately)
+*.ptau
+circuit/*.ptau
+
+# Proving/verification keys (generated, not source)
+*.zkey
+Backend/utils/*.zkey
+Backend/scripts/*.zkey
+frontend/public/*.zkey
+circuit/build/*.zkey
+
+# Compiled WASM files (generated from .circom)
+*.wasm
+Backend/utils/*.wasm
+frontend/public/*.wasm
+
+# Generated circuit artifacts
+*.r1cs
+*.sym
+circuit/*.r1cs
+circuit/*.sym
+circuit/*_js/
+circuit/*_output/
+circuit/build/
+circuit/deposit_output/
+circuit/withdraw_js/
+
+# Frontend build
+frontend/.next/
+frontend/build/
+frontend/dist/
+
+# Environment variables
+.env
+.env.local
+Backend/.env
+frontend/.env
+
+# Logs and reports
+*.log
+Backend/gas-report.txt
+Backend/test-output.txt
+
+# OS files
+.DS_Store
+**/.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+*.swp
+
+# Test coverage
+coverage/
